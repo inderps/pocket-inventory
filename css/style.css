@@ -1031,13 +1031,28 @@ a.pure-button-primary {
 
 /* This is the subheading that appears on the blue section */
 .splash-subhead {
-    color: #000000;
+    color: #ffffff;
+    padding: 10px;
     font-size: 40px;
     line-height: 1.5em;
     width: 60%;
     margin: auto;
+    background: #000;
+    background: rgba(0,0,0,0.5);
 }
 
+.splash-subhead .red{
+    color: #e84f5b;
+}
+.splash-subhead .blue{
+    color: #2c71b5;
+}
+.splash-subhead .green{
+    color: #00b58a;
+}
+.splash-subhead .yellow{
+    color: #f49916;
+}
 /*
  * -- CONTENT STYLES --
  * This represents the content area (everything below the blue section)
