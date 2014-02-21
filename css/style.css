@@ -1011,7 +1011,6 @@ a.pure-button-primary {
 .splash {
     /* absolute center .splash within .splash-container */
     width: 80%;
-    height: 50%;
     margin: auto;
     position: absolute;
     top: 100px; left: 0; bottom: 0; right: 0;
@@ -1033,7 +1032,7 @@ a.pure-button-primary {
 .splash-subhead {
     color: #ffffff;
     padding: 10px;
-    font-size: 40px;
+    font-size: 14px;
     line-height: 1.5em;
     width: 60%;
     margin: auto;
@@ -1100,6 +1099,21 @@ a.pure-button-primary {
     background: #111;
 }
 
+.feature-img img{
+    float: right;
+}
+
+.feature-text {
+    margin-top: 150px;
+}
+
+.feature-text p{
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+}
+
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
  * On tablets and other medium-sized devices, we want to customize some
@@ -1146,6 +1160,9 @@ a.pure-button-primary {
     .l-box-lrg {
         border: none;
     }
+    .splash-subhead {
+        font-size: 28px;
+    }
 
 }
 
@@ -1159,4 +1176,8 @@ a.pure-button-primary {
     .splash-head {
         font-size: 500%;
     }
+    .splash-subhead {
+        font-size: 40px;
+    }
 }
+
