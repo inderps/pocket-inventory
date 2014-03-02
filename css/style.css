@@ -1126,8 +1126,15 @@ a.pure-button-primary {
         font-size: 16px;
     }
     /* We want to give the content area some more padding */
-    .content {
+    .content_grey {
         padding: 1em;
+        background-color: #ebebeb;
+        background: url(/img/grid_noise.png) repeat;
+    }
+
+    .content_white {
+        padding: 1em;
+        background-color: #ffffff;
     }
 
     /* We can align the menu header to the left, but float the
