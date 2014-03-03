@@ -7,8 +7,18 @@
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/pure.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript">
+        function linkToSignUp(event) {
+            window.location.href = "#targetDiv";
+            event.preventDefault();
+            event.stopPropagation();
+        }
+    </script>
+
 </head>
 <body>
+
 <div class="header">
     <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
         <a class="pure-menu-heading" href="">Pocket Inventory</a>
@@ -30,61 +40,104 @@
     </div>
 </div>
 
-<div class="content_grey">
-    <div class="pure-g">
-        <div class="l-box-lrg pure-u-1 pure-u-med-2-5 feature-img" style="position: relative;">
-            <img src = "img/VendorMockup.png" style="position: relative; width: 300px; height: 620px">
-        </div>
-
-        <div class="l-box-lrg pure-u-1 pure-u-med-3-5 feature-text">
-            <p>
-                Manage list of vendors
-            </p>
+<div class="content">
+    <div style="position: relative">
+        <button class="btn btn-lg btn-danger" style="position: fixed;top: 90%; right: 0px; z-index: 10"
+                onclick="linkToSignUp()">Sign Up Now!
+        </button>
+        <div class="pure-g" style="position: relative;">
+            <img src="img/Benefits.png" height="600px" width="100%">
         </div>
     </div>
-</div>
 
-<div class="content_white">
-    <div class="pure-g">
-        <div class="l-box-lrg pure-u-1 pure-u-med-2-5 feature-img" style="position: relative;">
-            <img src = "img/VendorMockup.png" style="position: relative; width: 300px; height: 620px">
-        </div>
+    <div class="content_grey">
+        <div class="pure-g">
+            <div class="l-box-lrg pure-u-1 pure-u-med-2-5 feature-img" style="position: relative;">
+                <img src="img/VendorMockup.png" style="position: relative; width: 300px; height: 620px">
+            </div>
 
-        <div class="l-box-lrg pure-u-1 pure-u-med-3-5 feature-text">
-            <p>
-                Manage list of vendors
-            </p>
-        </div>
-    </div>
-</div>
-
-<div class="content_grey">
-    <div class="pure-g">
-        <div class="l-box-lrg pure-u-1 pure-u-med-2-5 feature-img" style="position: relative;">
-            <img src = "img/VendorMockup.png" style="position: relative; width: 300px; height: 620px">
-        </div>
-
-        <div class="l-box-lrg pure-u-1 pure-u-med-3-5 feature-text">
-            <p>
-                Manage list of vendors
-            </p>
+            <div class="l-box-lrg pure-u-1 pure-u-med-3-5 feature-text">
+                <p>
+                    Manage list of vendors
+                </p>
+            </div>
         </div>
     </div>
-</div>
 
+    <div class="content_white">
+        <div class="pure-g">
+            <div class="l-box-lrg pure-u-1 pure-u-med-2-5 feature-img" style="position: relative;">
+                <img src="img/VendorMockup.png" style="position: relative; width: 300px; height: 620px">
+            </div>
 
-<div class="content_white">
-    <div class="pure-g">
-        <div class="l-box-lrg pure-u-1 pure-u-med-2-5 feature-img" style="position: relative;">
-            <img src = "img/VendorMockup.png" style="position: relative; width: 300px; height: 620px">
+            <div class="l-box-lrg pure-u-1 pure-u-med-3-5 feature-text">
+                <p>
+                    Manage list of vendors
+                </p>
+            </div>
         </div>
+    </div>
 
-        <div class="l-box-lrg pure-u-1 pure-u-med-3-5 feature-text">
-            <p>
-                Manage list of vendors
-            </p>
+    <!--<div class="content_grey">-->
+        <!--<div class="pure-g">-->
+            <!--<div class="l-box-lrg pure-u-1 pure-u-med-2-5 feature-img" style="position: relative;">-->
+                <!--<img src="img/VendorMockup.png" style="position: relative; width: 300px; height: 620px">-->
+            <!--</div>-->
+
+            <!--<div class="l-box-lrg pure-u-1 pure-u-med-3-5 feature-text">-->
+                <!--<p>-->
+                    <!--Manage list of vendors-->
+                <!--</p>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+
+    <!--<div class="content_white">-->
+        <!--<div class="pure-g">-->
+            <!--<div class="l-box-lrg pure-u-1 pure-u-med-2-5 feature-img" style="position: relative;">-->
+                <!--<img src="img/VendorMockup.png" style="position: relative; width: 300px; height: 620px">-->
+            <!--</div>-->
+
+            <!--<div class="l-box-lrg pure-u-1 pure-u-med-3-5 feature-text">-->
+                <!--<p>-->
+                    <!--Manage list of vendors-->
+                <!--</p>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <div class="content_grey">
+        <div id="targetDiv" style="width: 50em; margin: 0 auto;">
+            <div class="span8 offset2 well text-center">
+                <h2 class="header">Sign Up!</h2>
+
+                <form action="/register" method="post" class="form-horizontal sign_up">
+                    <!--<br/><p><input type="email" name="email" placeholder="E-Mail" class="input-lg text_field" style="width: 100%"></p>-->
+                    <!--<div>-->
+                    <!--<div class="pure-menu-label">Which mobile platform do you use?</div>-->
+                    <!--<select id="user_platform" name="user[platform]"  class="field" style="width: 100%"><option value="iPhone">iPhone</option>-->
+                    <!--<option value="Android">Android</option>-->
+                    <!--<option value="Blackberry">Blackberry</option>-->
+                    <!--<option value="Windows Phone">Windows Phone</option>-->
+                    <!--</select>-->
+                    <!--</div><br/>-->
+                    <!--<p><input type="submit" class="btn btn-info btn-lg" style="width: 100%" value="Sign Up for free!"></p>-->
+                    <!--</form>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <div class="col-lg-12">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="E-Mail">
+                        <span class="input-group-btn">
+                        <button class="btn btn-default" type="button" style="background-color: #1ac7a7; color: #ffffff">Try Now!</button>
+                        </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>
 </body>
 </html>
+
