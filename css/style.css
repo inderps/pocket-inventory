@@ -1094,11 +1094,6 @@ a.pure-button-primary {
     color: #aaa;
 }
 
-/* This is the class used for the footer */
-.footer {
-    background: #111;
-}
-
 .feature-img img{
     float: right;
 }
@@ -1128,7 +1123,7 @@ a.pure-button-primary {
 
     /* We want to give the content area some more padding */
     .content{
-        height: 600px;
+        height: 120px;
     }
     .content_grey {
         padding: 1em;
@@ -1222,4 +1217,39 @@ box-shadow: rgba(0,0,0,0.21) 0 2px 2px 0px inset;
     font-size: 16px;
     background-color: #F8F7F3;
     box-shadow: rgba(0,0,0,0.21) 0 2px 2px 0px inset;
+}
+
+.features_tab:hover h4{
+    font-size: x-large;
+    color:#e84f5b;
+}
+.features_tab{
+    display: inline-block;
+    border-left: 1px solid #1ac7a7;
+    width: 20%;
+    padding-bottom: 40px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.features_tab_margin{
+    margin-left: -4px;
+}
+
+.boxInner img:hover {
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4);
+    transform: scale(1.4);
+}
+.footer{
+    background-color: #2d3e50;
+    width: 100%;
+    height: 40px !important;
+    padding-top: 7px;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    color: #ffffff;
 }
