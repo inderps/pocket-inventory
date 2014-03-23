@@ -1223,6 +1223,10 @@ box-shadow: rgba(0,0,0,0.21) 0 2px 2px 0px inset;
     font-size: x-large;
     color:#e84f5b;
 }
+
+.features_tab:hover {
+    cursor: pointer;
+}
 .features_tab{
     display: inline-block;
     border-left: 1px solid #1ac7a7;
