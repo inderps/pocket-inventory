@@ -1039,17 +1039,16 @@ a.pure-button-primary {
     background: #000;
     background: rgba(0,0,0,0.5);
 }
-
-.splash-subhead .red{
+.red{
     color: #e84f5b;
 }
-.splash-subhead .blue{
+.blue{
     color: #2c71b5;
 }
-.splash-subhead .green{
+.green{
     color: #00b58a;
 }
-.splash-subhead .yellow{
+.yellow{
     color: #f49916;
 }
 /*
@@ -1262,4 +1261,24 @@ box-shadow: rgba(0,0,0,0.21) 0 2px 2px 0px inset;
 
 .features_tab:hover h3{
     color:#e84f5b;
+}
+
+#signup-form{
+    margin: auto;
+    background-color: #ebebeb;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.signup-area{
+    text-align: center;
+    margin: auto;
+}
+
+#signup-form form{
+    font-size: 28px;
+}
+
+#signup-form input{
+    width: inherit;
 }
