@@ -1219,26 +1219,6 @@ box-shadow: rgba(0,0,0,0.21) 0 2px 2px 0px inset;
     box-shadow: rgba(0,0,0,0.21) 0 2px 2px 0px inset;
 }
 
-.features_tab:hover h4{
-    font-size: x-large;
-    color:#e84f5b;
-}
-
-.features_tab:hover {
-    cursor: pointer;
-}
-.features_tab{
-    display: inline-block;
-    border-left: 1px solid #1ac7a7;
-    width: 20%;
-    padding-bottom: 40px;
-    text-align: center;
-    padding-top: 40px;
-}
-
-.features_tab_margin{
-    margin-left: -4px;
-}
 
 .boxInner img:hover {
     -webkit-transform: scale(1.4);
@@ -1256,4 +1236,30 @@ box-shadow: rgba(0,0,0,0.21) 0 2px 2px 0px inset;
     font-weight: normal;
     text-align: center;
     color: #ffffff;
+}
+.signup-button {
+    background: rgb(202, 60, 60); /* this is a maroon */
+    width: 200px;
+    position: fixed;
+    top: 85%;
+    right: 0px;
+    z-index: 10;
+    font-size: 125%;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.features_tab{
+    background-color: rgba(55, 155, 139, 0.33);
+    text-align: center;
+    display: inline-block;
+    border-left: 1px solid #1ac7a7;
+    border-bottom: 1px solid #1ac7a7;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    cursor: pointer;
+}
+
+.features_tab:hover h3{
+    color:#e84f5b;
 }
