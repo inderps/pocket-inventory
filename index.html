@@ -1,43 +1,43 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pocket Inventory</title>
-  <!--<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>-->
-  <link rel="stylesheet" href="css/pure.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <script type="text/javascript">
-    function extracted(event) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
-    function linkToSignUp(event) {
-      window.location.href = "#signUp";
-      extracted(event);
-    }
-    function linkToVendorList(event) {
-      window.location.href = "#vendorList";
-      extracted(event)
-    }
-    function linkToClientList(event) {
-      window.location.href = "#clientList";
-      extracted(event);
-    }
-    function linkToStockList(event) {
-      window.location.href = "#stockList";
-      extracted(event);
-    }
-    function linkToOrderList(event) {
-      window.location.href = "#orderList";
-      extracted(event);
-    }
-    function linkToPaymentList(event) {
-      window.location.href = "#paymentList";
-      extracted(event);
-    }
-  </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pocket Inventory</title>
+    <!--<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>-->
+    <link rel="stylesheet" href="css/pure.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript">
+        function extracted(event) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        function linkToSignUp(event) {
+            window.location.href = "#signUp";
+            extracted(event);
+        }
+        function linkToVendorList(event) {
+            window.location.href = "#vendorList";
+            extracted(event)
+        }
+        function linkToClientList(event) {
+            window.location.href = "#clientList";
+            extracted(event);
+        }
+        function linkToStockList(event) {
+            window.location.href = "#stockList";
+            extracted(event);
+        }
+        function linkToOrderList(event) {
+            window.location.href = "#orderList";
+            extracted(event);
+        }
+        function linkToPaymentList(event) {
+            window.location.href = "#paymentList";
+            extracted(event);
+        }
+    </script>
 
 </head>
 <body>
@@ -45,25 +45,25 @@
 </button>
 
 <div class="header">
-  <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
-    <a class="pure-menu-heading" href="">Pocket Inventory</a>
+    <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href="">Pocket Inventory</a>
 
-    <ul>
-      <li class="pure-menu-selected"><a href="#">Try Now</a></li>
-    </ul>
-  </div>
+        <ul>
+            <li class="pure-menu-selected"><a href="#">Try Now</a></li>
+        </ul>
+    </div>
 </div>
 
 <div class="splash-container">
-  <div class="splash">
-    <h1 class="splash-head">Manage Inventory on mobile</h1>
+    <div class="splash">
+        <h1 class="splash-head">Manage Inventory on mobile</h1>
 
-    <p class="splash-subhead">
-      A Mobile app for <span class="red">small scale industrialists</span> to manage their <span
-      class="green">inventory</span>
-      and <span class="yellow">payments</span>.
-    </p>
-  </div>
+        <p class="splash-subhead">
+            A Mobile app for <span class="red">small scale industrialists</span> to manage their <span
+                class="green">inventory</span>
+            and <span class="yellow">payments</span>.
+        </p>
+    </div>
 </div>
 
 
@@ -76,75 +76,126 @@
 </div>
 
 <div class="content_grey" id="vendorList">
-  <div class="pure-g-r">
-    <div class="l-box-lrg pure-u-1 pure-u-med-2-5 feature-img" style="position: relative;">
-      <img src="img/vendorsMockup.png" style="position: relative; width: 300px; height: 620px">
-    </div>
+    <div class="pure-g-r">
+        <div class="l-box-lrg pure-u-1 pure-u-med-1-2 feature-img" style="position: relative; text-align: center;">
+            <img src="img/vendorsMockup.png" style="position: relative; width: 300px; height: 620px">
+        </div>
 
-    <div class="l-box-lrg pure-u-1 pure-u-med-3-5 feature-text">
-      <p>
-        Manage list of vendors
-      </p>
+        <div class="l-box-lrg pure-u-1 pure-u-med-1-2 feature-text" style="padding-left: 90px;">
+            <p>
+                Manage list of vendors
+                <br/><br/>
+            <ul class="pure-u-1">
+                <li>View Consolidated list of all vendors</li>
+                <li>View history of transactions with a vendor</li>
+                <li>Add a vendor and its details</li>
+                <li>Search for a vendor</li>
+                <li>Edit vendor details</li>
+                <li>Delete a vendor</li>
+            </ul>
+            </p>
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="content_white" id="clientList">
-  <div class="pure-g-r">
+    <div class="pure-g-r">
 
-    <div class="l-box-lrg pure-u-1 pure-u-med-2-5 feature-img" style="position: relative;">
-      <img src="img/clientMockup.png" style="position: relative; width: 300px; height: 620px">
-    </div>
-    <div class="l-box-lrg pure-u-1 pure-u-med-3-5 feature-text">
-      <p>
-        Manage list of Clients
-      </p>
-    </div>
+        <div class="l-box-lrg pure-u-1 pure-u-med-1-2 feature-img" style="position: relative; text-align: center;">
+            <img src="img/clientMockup.png" style="position: relative; width: 300px; height: 620px">
+        </div>
+        <div class="l-box-lrg pure-u-1 pure-u-med-1-2 feature-text" style="padding-left: 90px;">
+            <p>
+                Manage list of Clients
+                <br/><br/>
+            <ul class="pure-u-1">
+                <li>View Consolidated list of all clients</li>
+                <li>View history of transactions with a client</li>
+                <li>Add a client and its details</li>
+                <li>Search for a client</li>
+                <li>Edit client details</li>
+                <li>Delete a client</li>
+            </ul>
+            </p>
+        </div>
 
-  </div>
+    </div>
 </div>
 
 <div class="content_grey" id="stockList">
-  <div class="pure-g-r">
-    <div class="l-box-lrg pure-u-1 pure-u-med-2-5 feature-img" style="position: relative;">
-      <img src="img/stocksMockup.png" style="position: relative; width: 300px; height: 620px">
-    </div>
+    <div class="pure-g-r">
+        <div class="l-box-lrg pure-u-1 pure-u-med-1-2 feature-img" style="position: relative; text-align: center;">
+            <img src="img/stocksMockup.png" style="position: relative; width: 300px; height: 620px">
+        </div>
 
-    <div class="l-box-lrg pure-u-1 pure-u-med-3-5 feature-text">
-      <p>
-        Manage Stock Items
-      </p>
+        <div class="l-box-lrg pure-u-1 pure-u-med-1-2 feature-text" style="padding-left: 90px;">
+            <p>
+                Manage Stock Items
+                <br/><br/>
+            <ul class="pure-u-1">
+                <li>View all items in stock presently</li>
+                <li>Quantities associated with each item</li>
+                <li>Add an item to stock</li>
+                <li>Search for an item in stock</li>
+                <li>Edit quantity available for an item</li>
+                <li>Delete an item from the stock</li>
+            </ul>
+            </p>
+        </div>
     </div>
-  </div>
 </div>
 
 
 <div class="content_white" id="orderList">
-  <div class="pure-g-r">
-    <div class="l-box-lrg pure-u-1 pure-u-med-2-5 feature-img" style="position: relative;">
-      <img src="img/newOrders.png" style="position: relative; width: 300px; height: 620px">
-    </div>
+    <div class="pure-g-r">
+        <div class="l-box-lrg pure-u-1 pure-u-med-1-2 feature-img" style="position: relative; text-align: center;">
+            <img src="img/newOrders.png" style="position: relative; width: 300px; height: 620px">
+        </div>
 
-    <div class="l-box-lrg pure-u-1 pure-u-med-3-5 feature-text">
-      <p>
-        Manage Orders
-      </p>
+        <div class="l-box-lrg pure-u-1 pure-u-med-1-2 feature-text" style="padding-left: 90px;">
+            <p>
+                Manage Orders
+                <br/><br/>
+            <ul class="pure-u-1">
+                <li>Ability to track orders
+                    <ul>
+                        <li>According to date of purchase</li>
+                        <li>According to vendor</li>
+                    </ul>
+                </li>
+                <li>Create a new order and associate a vendor to it</li>
+                <li>Add items to an order</li>
+                <li>Associate cost to an order</li>
+            </ul>
+            </p>
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="content_grey" id="paymentList">
-  <div class="pure-g-r">
-    <div class="l-box-lrg pure-u-1 pure-u-med-2-5 feature-img" style="position: relative;">
-      <img src="img/paymentMockup.png" style="position: relative; width: 300px; height: 620px">
-    </div>
+    <div class="pure-g-r">
+        <div class="l-box-lrg pure-u-1 pure-u-med-1-2 feature-img" style="position: relative; text-align: center;">
+            <img src="img/paymentMockup.png" style="position: relative; width: 300px; height: 620px">
+        </div>
 
-    <div class="l-box-lrg pure-u-1 pure-u-med-3-5 feature-text">
-      <p>
-        Manage Payments
-      </p>
+        <div class="l-box-lrg pure-u-1 pure-u-med-1-2 feature-text" style="padding-left: 90px;">
+            <p>
+                Manage Payments
+                <br/><br/>
+            <ul class="pure-u-1">
+                <li>Ability to view pending payment
+                    <ul>
+                        <li>Credit</li>
+                        <li>Debit</li>
+                    </ul>
+                </li>
+                <li>Clear a payment, when the transaction is complete</li>
+                <li>View to whom the payment is associated with and the amount</li>
+                <li>Track since when is payment pending</li>
+            </ul>
+            </p>
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="content_white">
@@ -152,29 +203,28 @@
     </div>
 
 
+    <div id="signUp" style="width: 40em; margin: 0 auto;">
+        <div class="span8 offset2 well text-center">
+            <h3 class="page-header" style="color: #516171">THAT'S IT! DON'T BELIEVE IT'S THIS EASY?</h3>
+            <h4 class="header" style="color: dimgrey;">Sign UP Now!</h4>
+            <h5 class="header" style="color: #516171; font-style: italic">Managing Business has never been easier</h5>
+            <br/>
 
-  <div id="signUp" style="width: 40em; margin: 0 auto;">
-    <div class="span8 offset2 well text-center">
-      <h3 class="page-header" style="color: #516171">THAT'S IT! DON'T BELIEVE IT'S THIS EASY?</h3>
-      <h4 class="header" style="color: dimgrey;">Sign UP Now!</h4>
-      <h5 class="header" style="color: #516171; font-style: italic">Managing Business has never been easier</h5>
-      <br/>
-
-      <form action="/register" method="post" class="form-horizontal sign_up" style="margin: 0 auto;">
-        <div class="col-lg-12">
-          <div class="input-group">
-            <input type="text" class="form-control input-lg" placeholder="E-Mail">
+            <form action="/register" method="post" class="form-horizontal sign_up" style="margin: 0 auto;">
+                <div class="col-lg-12">
+                    <div class="input-group">
+                        <input type="text" class="form-control input-lg" placeholder="E-Mail">
                         <span class="input-group-btn">
                         <button class="btn btn-default btn-lg" type="button"
                                 style="background-color: #1ac7a7; color: #ffffff">Try Now!
                         </button>
                         </span>
-          </div>
+                    </div>
+                </div>
+            </form>
+            <br/><br/><br/><br/>
         </div>
-      </form>
-      <br/><br/><br/><br/>
     </div>
-  </div>
 </div>
 </div>
 <footer class="footer">footer!!</footer>

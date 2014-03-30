@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: url('/img/bg-main.gif') repeat;
+    background: url('../img/bg-main.gif') repeat;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -994,7 +994,7 @@ a.pure-button-primary {
  */
 
 .splash-container {
-    background-image: url(/img/phone_large.jpg);
+    background-image: url(../img/phone_large.jpg);
     background-position: 100% 0;
     background-repeat: no-repeat;
     -moz-background-size: cover;
@@ -1094,17 +1094,18 @@ a.pure-button-primary {
     color: #aaa;
 }
 
-.feature-img img{
-    float: right;
-}
-
 .feature-text {
     margin-top: 150px;
 }
 
 .feature-text p{
-    text-align: center;
     font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+}
+
+.feature-text ul{
+    font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     color: #000000;
 }
@@ -1128,7 +1129,7 @@ a.pure-button-primary {
     .content_grey {
         padding: 1em;
         background-color: #ebebeb;
-        background: url(/img/grid_noise.png) repeat;
+        background: url(../img/grid_noise.png) repeat;
     }
 
     .content_white {
