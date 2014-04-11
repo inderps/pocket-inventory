@@ -4,10 +4,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pocket Inventory</title>
-  <!--<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>-->
   <link rel="stylesheet" href="css/pure.css">
   <link rel="stylesheet" href="css/style.css">
+  <script language="JavaScript" type="text/javascript" src="/js/jquery.min.js"></script>
   <script type="text/javascript">
+    function getUrlVars() {
+      var vars = [], hash;
+      var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+      for (var i = 0; i < hashes.length; i++) {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+      }
+      return vars;
+    }
+
+    $(document).ready(function () {
+      var url = "http://localhost:3000/visitors/";
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = url + "create?identifier=" + getUrlVars()["id"];
+      $("body").append(script);
+      $("#email_id_form").attr("action", url + "signup?identifier=" + getUrlVars()["id"]);
+    });
+
     function extracted(event) {
       event.preventDefault();
       event.stopPropagation();
@@ -67,11 +87,11 @@
 
 
 <div class="pure-g-r">
-    <div class="pure-u-1-5 features_tab" onclick="linkToVendorList()"><h3> Vendors </h3></div>
-    <div class="pure-u-1-5 features_tab" onclick="linkToClientList()"><h3> Clients </h3></div>
-    <div class="pure-u-1-5 features_tab" onclick="linkToPaymentList()"><h3> Payments </h3></div>
-    <div class="pure-u-1-5 features_tab" onclick="linkToStockList()"><h3> Stocks </h3></div>
-    <div class="pure-u-1-5 features_tab" onclick="linkToOrderList()"><h3> Orders </h3></div>
+  <div class="pure-u-1-5 features_tab" onclick="linkToVendorList()"><h3> Vendors </h3></div>
+  <div class="pure-u-1-5 features_tab" onclick="linkToClientList()"><h3> Clients </h3></div>
+  <div class="pure-u-1-5 features_tab" onclick="linkToPaymentList()"><h3> Payments </h3></div>
+  <div class="pure-u-1-5 features_tab" onclick="linkToStockList()"><h3> Stocks </h3></div>
+  <div class="pure-u-1-5 features_tab" onclick="linkToOrderList()"><h3> Orders </h3></div>
 </div>
 
 <div class="content_grey" id="vendorList">
@@ -147,18 +167,19 @@
 </div>
 
 <div class="content_white">
-    <div class="pure-g-r">
-        <div class="pure-u signup-area">
-            <div id="signup-form">
-                <h1>Start using Pocket Inventory for <span class="red">Free</span> for first 30 days!</h1>
-                <h4>After that pay <span class="yellow">Rs 499/year</span></h4>
-                <form class="pure-form">
-                    <input type="email" placeholder="Enter your email here">
-                    <button type="submit" class="pure-button pure-button-primary">Sign Up</button>
-                </form>
-            </div>
-        </div>
+  <div class="pure-g-r">
+    <div class="pure-u signup-area">
+      <div id="signup-form">
+        <h1>Start using Pocket Inventory for <span class="red">Free</span> for first 30 days!</h1>
+        <h4>After that pay <span class="yellow">Rs 499/year</span></h4>
+
+        <form class="pure-form" id="email_id_form" method="post">
+          <input type="email" placeholder="Enter your email here" id="mail" name="email_id">
+          <button type="submit" id="sign_up_button" class="pure-button pure-button-primary">Sign Up</button>
+        </form>
+      </div>
     </div>
+  </div>
 </div>
 <footer class="footer">Pocket Inventory 2014</footer>
 </body>
