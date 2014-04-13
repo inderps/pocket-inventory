@@ -1012,8 +1012,8 @@ a.pure-button-primary {
     /* absolute center .splash within .splash-container */
     width: 80%;
     margin: auto;
-    position: absolute;
-    top: 100px; left: 0; bottom: 0; right: 0;
+    /*position: absolute;*/
+    /*top: 100px; left: 0; bottom: 0; right: 0;*/
     text-align: center;
 }
 
@@ -1026,6 +1026,7 @@ a.pure-button-primary {
     padding: 0.5em 1em;
     border-radius: 5px;
     line-height: 1em;
+    margin-top: 150px;
 }
 
 /* This is the subheading that appears on the blue section */
