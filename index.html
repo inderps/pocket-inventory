@@ -26,12 +26,15 @@
     }
 
     $(document).ready(function () {
-      var url = "http://pocket-inventory.herokuapp.com/visitors/";
+      var url = "http://pocket-inventory.herokuapp.com/visitors/create";
       var script = document.createElement('script');
       script.type = 'text/javascript';
-      script.src = url + "create?email_id=" + getUrlVars()["id"];
+      var email_id = getUrlVars()["id"];
+      if(email_id){
+          url = url + "email_id=" + email_id
+      }
+      script.src = url;
       $("body").append(script);
-      $("#email_id_form").attr("action", url + "signup?email_id=" + getUrlVars()["id"]);
     });
 
     function extracted(event) {
