@@ -6,6 +6,8 @@ body{
 }
 
 @media screen and (min-width: 35.5em) {
+
+
     .pure-u-sm-1,
     .pure-u-sm-1-1,
     .pure-u-sm-1-2,
@@ -1094,13 +1096,11 @@ a.pure-button-primary {
     color: #aaa;
 }
 
-.feature-img img{
-    float: right;
+.feature-img{
+  text-align: center;
 }
 
-.feature-text {
-    margin-top: 150px;
-}
+
 
 .feature-text p{
     text-align: center;
@@ -1170,6 +1170,14 @@ a.pure-button-primary {
         font-size: 28px;
     }
 
+  .feature-text {
+    margin-top: 150px;
+  }
+
+  .feature-img img{
+    float: right;
+  }
+
 }
 
 /*
@@ -1185,6 +1193,12 @@ a.pure-button-primary {
     .splash-subhead {
         font-size: 40px;
     }
+  .feature-text {
+    margin-top: 150px;
+  }
+  .feature-img img{
+    float: right;
+  }
 }
 
 .sign_up{
